@@ -1,0 +1,6 @@
+{
+  "appId": "com.simplychatbot.app",
+  "appName": "Simply Chatbot",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}

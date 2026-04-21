@@ -1,0 +1,66 @@
+THÔNG TIN CHI TIẾT, THÔNG SỐ KỸ THUẬT VÀ GIÁ BÁN CÁC DÒNG XE TESLA
+
+Tổng quan về mức giá chung: Các dòng xe Tesla chủ yếu tập trung vào phân khúc từ trung cấp đến hạng sang cao cấp. Mức giá (tham khảo tại thị trường Mỹ) dao động từ khoảng 38.990 USD (khoảng 950 triệu VNĐ cho mẫu xe rẻ nhất là Model 3) lên đến khoảng 99.990 USD (hơn 2.4 tỷ VNĐ cho Cybertruck) và thậm chí vượt mức 200.000 USD (gần 5 tỷ VNĐ cho siêu xe Roadster). Khi so sánh giá tiền chung, mức giá của các dòng xe Tesla thường đắt hơn, cao hơn đáng kể so với VinFast do định vị thương hiệu ở phân khúc cao cấp hơn.
+
+1. Tesla Model S
+- Phân khúc: Sedan chạy điện hạng sang cỡ lớn.
+- Tầm hoạt động (EPA): Lên đến 405 dặm (khoảng 652 km) cho bản Long Range; 396 dặm (637 km) cho bản Plaid.
+- Công suất tối đa: 670 mã lực (Long Range) / 1.020 mã lực (Plaid).
+- Khả năng tăng tốc 0-100 km/h: 3.1 giây (Long Range) / 1.99 giây (Plaid).
+- Tốc độ tối đa: 250 km/h (Long Range) / 322 km/h (Plaid).
+- Hệ dẫn động: AWD (2 động cơ cho Long Range, 3 động cơ cho Plaid).
+- Sức chứa: 5 hành khách.
+- Giá bán tham khảo (tại Mỹ): Khoảng $74,990 (Long Range) - $89,990 (Plaid).
+
+2. Tesla Model 3
+- Phân khúc: Sedan chạy điện hạng trung.
+- Tầm hoạt động (EPA): Từ 272 dặm (438 km) cho bản RWD đến 341 dặm (548 km) cho bản Long Range.
+- Công suất tối đa: Khoảng 283 mã lực (RWD) / 490 mã lực (Long Range) / 510 mã lực (Performance).
+- Khả năng tăng tốc 0-100 km/h: 5.8 giây (RWD) / 4.2 giây (Long Range) / 2.9 giây (Performance).
+- Hệ dẫn động: RWD (bản tiêu chuẩn) hoặc AWD (Long Range, Performance).
+- Sức chứa: 5 hành khách.
+- Giá bán tham khảo (tại Mỹ): Khoảng $38,990 (RWD) - $47,490 (Long Range) - $54,990 (Performance).
+
+3. Tesla Model X
+- Phân khúc: SUV chạy điện hạng sang cỡ lớn (có cửa Falcon Wing).
+- Tầm hoạt động (EPA): Lên đến 348 dặm (khoảng 560 km) cho bản Long Range; 326 dặm (525 km) cho bản Plaid.
+- Công suất tối đa: 670 mã lực (Long Range) / 1.020 mã lực (Plaid).
+- Khả năng tăng tốc 0-100 km/h: 3.8 giây (Long Range) / 2.5 giây (Plaid).
+- Tốc độ tối đa: 240 km/h (Long Range) / 262 km/h (Plaid).
+- Hệ dẫn động: AWD.
+- Sức chứa: Tùy chọn 5, 6, hoặc 7 hành khách.
+- Giá bán tham khảo (tại Mỹ): Khoảng $79,990 (Long Range) - $94,990 (Plaid).
+
+4. Tesla Model Y
+- Phân khúc: Crossover SUV chạy điện hạng trung.
+- Tầm hoạt động (EPA): Lên đến 310 dặm (khoảng 499 km) cho bản Long Range AWD.
+- Công suất tối đa: Khoảng 295 mã lực (RWD) / 384 mã lực (Long Range) / 456 mã lực (Performance).
+- Khả năng tăng tốc 0-100 km/h: 6.6 giây (RWD) / 4.8 giây (Long Range) / 3.5 giây (Performance).
+- Hệ dẫn động: RWD hoặc AWD.
+- Sức chứa: 5 hành khách (có tùy chọn 7 chỗ).
+- Giá bán tham khảo (tại Mỹ): Khoảng $43,990 (RWD) - $48,990 (Long Range AWD) - $52,490 (Performance).
+
+5. Tesla Cybertruck
+- Phân khúc: Xe bán tải điện (Pickup truck).
+- Tầm hoạt động (EPA): Lên đến 340 dặm (khoảng 547 km) cho bản AWD; 320 dặm (515 km) cho bản Cyberbeast.
+- Công suất tối đa: Khoảng 600 mã lực (AWD) / 845 mã lực (Cyberbeast).
+- Khả năng tăng tốc 0-100 km/h: 4.1 giây (AWD) / 2.6 giây (Cyberbeast).
+- Sức kéo (Towing capacity): 11.000 lbs (khoảng 4.989 kg).
+- Hệ dẫn động: RWD (sắp ra mắt), AWD, và 3 động cơ (Cyberbeast).
+- Giá bán tham khảo (tại Mỹ): Khoảng $60,990 (RWD - Dự kiến 2025) - $79,990 (AWD) - $99,990 (Cyberbeast).
+
+6. Tesla Roadster (Thế hệ 2 - Thông số dự kiến)
+- Phân khúc: Siêu xe thể thao chạy điện.
+- Tầm hoạt động: Lên đến 620 dặm (khoảng 1.000 km).
+- Khả năng tăng tốc 0-100 km/h: 1.9 giây (có thể trang bị thêm gói SpaceX đẩy thời gian xuống 1.1 giây).
+- Tốc độ tối đa: Trực tiếp vượt qua 400 km/h.
+- Mô-men xoắn tại bánh xe: 10.000 Nm.
+- Giá bán tham khảo dự kiến: Khoảng $200,000 - $250,000 (Tùy phiên bản Founders Series).
+
+7. Tesla Semi
+- Phân khúc: Xe tải đầu kéo chạy điện hạng nặng (Class 8).
+- Tầm hoạt động: Lên đến 500 dặm (khoảng 800 km) khi đầy tải trọng.
+- Khả năng tăng tốc 0-100 km/h: 20 giây khi đầy tải.
+- Tải trọng toàn bộ (kể cả xe): Lên đến 82.000 lbs (khoảng 37.000 kg).
+- Tiết kiệm nhiên liệu: Dự kiến tiết kiệm lên đến $200,000 nhiên liệu trong vòng 3 năm hoạt động so với xe tải động cơ diesel.
+- Giá bán tham khảo dự kiến: Khoảng $150,000 (bản 300 dặm) - $180,000 (bản 500 dặm).
