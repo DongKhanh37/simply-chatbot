@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { ChatHeader } from './components/ChatHeader';
 import { MessageList } from './components/MessageList';
 import { MessageInput } from './components/MessageInput';
+import { KnowledgeLibrary } from './components/KnowledgeLibrary';
+import { QuizMode } from './components/QuizMode';
 import { initializeKnowledgeBase, fetchLocalAIResponse, generateIntro } from './utils/rag';
 
 function getCurrentTime() {
@@ -21,6 +23,7 @@ function App() {
     const [isInitializing, setIsInitializing] = useState(true);
     const [initProgress, setInitProgress] = useState('Đang đọc thư mục...');
     const [initialIntro, setInitialIntro] = useState(`Xin chào! Tôi có thể giúp gì cho bạn hôm nay?`);
+    const [viewMode, setViewMode] = useState('chat'); // 'chat', 'library', 'quiz'
 
     useEffect(() => {
         const initRAG = async () => {
@@ -55,10 +58,14 @@ function App() {
         setIsTyping(true);
 
         // Gọi API Local AI (LM Studio) kết hợp RAG
-        const botReplyText = await fetchLocalAIResponse(text);
+        const botReply = await fetchLocalAIResponse(text);
         
         setIsTyping(false);
-        setMessages(prev => [...prev, { text: botReplyText, isUser: false, time: getCurrentTime() }]);
+        // botReply is parsed JSON: { text, citations, suggested_questions, table_data }
+        // If it failed and returned string, we handle it as fallback
+        const botMsg = typeof botReply === 'string' ? { text: botReply } : botReply;
+        
+        setMessages(prev => [...prev, { ...botMsg, isUser: false, time: getCurrentTime() }]);
     };
 
     const handleClearChat = () => {
@@ -99,9 +106,23 @@ function App() {
                     initProgress={initProgress} 
                     onClearChat={handleClearChat} 
                     onUndoChat={handleUndoChat} 
+                    onOpenLibrary={() => setViewMode('library')}
+                    onOpenQuiz={() => setViewMode('quiz')}
                 />
-                <MessageList messages={messages} isTyping={isTyping} />
-                <MessageInput onSend={handleSendMessage} disabled={isInitializing || isTyping} />
+                
+                {viewMode === 'chat' && (
+                    <>
+                        <MessageList 
+                            messages={messages} 
+                            isTyping={isTyping} 
+                            onSendSuggestedQuestion={handleSendMessage} 
+                        />
+                        <MessageInput onSend={handleSendMessage} disabled={isInitializing || isTyping} />
+                    </>
+                )}
+
+                {viewMode === 'library' && <KnowledgeLibrary onClose={() => setViewMode('chat')} />}
+                {viewMode === 'quiz' && <QuizMode onClose={() => setViewMode('chat')} />}
             </div>
         </div>
     );

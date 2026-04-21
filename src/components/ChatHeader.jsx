@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Bot, MoreVertical, RefreshCw, Undo2 } from 'lucide-react';
+import { Bot, MoreVertical, RefreshCw, Undo2, Book, Gamepad2 } from 'lucide-react';
 
-export function ChatHeader({ isInitializing, initProgress, onClearChat, onUndoChat }) {
+export function ChatHeader({ isInitializing, initProgress, onClearChat, onUndoChat, onOpenLibrary, onOpenQuiz }) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const menuRef = useRef(null);
 
@@ -29,6 +29,20 @@ export function ChatHeader({ isInitializing, initProgress, onClearChat, onUndoCh
                 </div>
             </div>
             <div className="header-actions" ref={menuRef}>
+                <button 
+                    className="action-btn" 
+                    title="Thư viện tài liệu" 
+                    onClick={onOpenLibrary}
+                >
+                    <Book size={20} />
+                </button>
+                <button 
+                    className="action-btn" 
+                    title="Luyện tập (Quiz)" 
+                    onClick={onOpenQuiz}
+                >
+                    <Gamepad2 size={20} />
+                </button>
                 <button 
                     className="action-btn" 
                     title="Cài đặt" 
