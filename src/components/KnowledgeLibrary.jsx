@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { X, Search, File, FileText, Database } from 'lucide-react';
-import { getKnowledgeFiles } from '../utils/rag';
+import { getKnowledgeFiles, getFileContent } from '../utils/rag';
 
 export function KnowledgeLibrary({ onClose }) {
     const [files, setFiles] = useState([]);
     const [search, setSearch] = useState('');
+    const [viewingFile, setViewingFile] = useState(null);
 
     useEffect(() => {
         setFiles(getKnowledgeFiles());
@@ -38,7 +39,7 @@ export function KnowledgeLibrary({ onClose }) {
                                 <h3>{file.name}</h3>
                                 <span>{file.type} • {file.size}</span>
                             </div>
-                            <button className="view-btn">Xem</button>
+                            <button className="view-btn" onClick={() => setViewingFile(getFileContent(file.name))}>Xem</button>
                         </div>
                     ))}
                     {filteredFiles.length === 0 && (
@@ -46,6 +47,25 @@ export function KnowledgeLibrary({ onClose }) {
                     )}
                 </div>
             </div>
+
+            {viewingFile && (
+                <div className="doc-viewer-modal">
+                    <div className="doc-viewer-header">
+                        <h3 style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '1rem' }}>
+                            {viewingFile.type === 'pdf' ? <File size={18} className="pdf-icon" /> : <FileText size={18} className="txt-icon" />}
+                            {viewingFile.name}
+                        </h3>
+                        <button className="close-btn" onClick={() => setViewingFile(null)}><X size={24} /></button>
+                    </div>
+                    <div className="doc-viewer-content">
+                        {viewingFile.type === 'txt' ? (
+                            <pre>{viewingFile.content}</pre>
+                        ) : (
+                            <iframe src={viewingFile.url} title="PDF Viewer" style={{ width: '100%', height: '100%', border: 'none' }} />
+                        )}
+                    </div>
+                </div>
+            )}
         </div>
     );
 }

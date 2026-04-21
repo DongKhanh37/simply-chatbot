@@ -121,9 +121,10 @@ function App() {
                     </>
                 )}
 
-                {viewMode === 'library' && <KnowledgeLibrary onClose={() => setViewMode('chat')} />}
                 {viewMode === 'quiz' && <QuizMode onClose={() => setViewMode('chat')} />}
             </div>
+            
+            {viewMode === 'library' && <KnowledgeLibrary onClose={() => setViewMode('chat')} />}
         </div>
     );
 }

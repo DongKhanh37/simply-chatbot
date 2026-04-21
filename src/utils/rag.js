@@ -260,6 +260,18 @@ export function getKnowledgeFiles() {
     }));
 }
 
+export function getFileContent(fileName) {
+    const txtKey = `../knowledge/${fileName}`;
+    if (txtModules[txtKey]) {
+        return { name: fileName, type: 'txt', content: txtModules[txtKey] };
+    }
+    const pdfKey = `../knowledge/${fileName}`;
+    if (pdfModules[pdfKey]) {
+        return { name: fileName, type: 'pdf', url: pdfModules[pdfKey] };
+    }
+    return null;
+}
+
 export async function generateQuiz() {
     if (knowledgeBase.length === 0) return null;
     
